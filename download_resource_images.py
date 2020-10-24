@@ -10,4 +10,4 @@ def download_resource_images(url_list, dst_path):
         create_dir(dst_dir_path)
         dst_file_path = dst_dir_path + "/saizeriya_photo_hunt_original_image.png"
         download_file(url, dst_file_path)
-        time.sleep(5)
+        # time.sleep(5)
