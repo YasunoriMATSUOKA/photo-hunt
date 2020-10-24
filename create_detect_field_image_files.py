@@ -1,0 +1,5 @@
+from convert_color_image_file_to_bw_image_file_with_manual_threshold import convert_color_image_file_to_bw_image_file_with_manual_threshold
+
+
+def create_detect_field_image_files(url_list):
+    print(url_list)
