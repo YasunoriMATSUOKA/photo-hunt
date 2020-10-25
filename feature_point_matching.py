@@ -1,7 +1,7 @@
 import os
 import numpy as np
 import cv2
-from create_dir import create_dir
+from create_dir_before_write_file import create_dir_before_write_file
 
 
 def feature_point_matching(left_image_file_path, right_image_file_path, matching_result_image_file_path):
@@ -35,10 +35,7 @@ def feature_point_matching(left_image_file_path, right_image_file_path, matching
         flags=2
     )
 
-    matching_result_image_path = os.path.dirname(
-        matching_result_image_file_path
-    )
-    create_dir(matching_result_image_path)
+    create_dir_before_write_file(matching_result_image_file_path)
     cv2.imwrite(matching_result_image_file_path, matching_result_image)
 
     vector_x_list = []

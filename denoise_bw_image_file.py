@@ -1,7 +1,7 @@
 import os
 import cv2
 import numpy as np
-from create_dir import create_dir
+from create_dir_before_write_file import create_dir_before_write_file
 
 
 def denoise_bw_image_file(bw_image_with_white_noise_file_path, denoised_bw_image_file_path, kernel_size_1, kernel_size_2):
@@ -11,6 +11,5 @@ def denoise_bw_image_file(bw_image_with_white_noise_file_path, denoised_bw_image
         gray_image, 254, 255, cv2.THRESH_BINARY)
     kernel = np.ones((kernel_size_1, kernel_size_2), np.uint8)
     denoised_bw_image = cv2.morphologyEx(bw_image, cv2.MORPH_OPEN, kernel)
-    denoised_bw_image_path = os.path.dirname(denoised_bw_image_file_path)
-    create_dir(denoised_bw_image_path)
+    create_dir_before_write_file(denoised_bw_image_file_path)
     cv2.imwrite(denoised_bw_image_file_path, denoised_bw_image)
