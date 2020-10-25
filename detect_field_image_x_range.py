@@ -37,9 +37,9 @@ def detect_field_image_x_range(detect_field_image_file_path):
             x_max = vertex_cordinate["x_left"] - 1
 
     if (x_max - x_min + 1) % 2 == 0:
-        size = int((x_max - x_min + 1) / 2)
+        size = abs(int((x_max - x_min + 1) / 2))
     elif (x_max - x_min + 1) % 2 == 1:
-        size = int((x_max - x_min) / 2)
+        size = abs(int((x_max - x_min) / 2))
     else:
         size = None
 
