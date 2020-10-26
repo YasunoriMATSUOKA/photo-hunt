@@ -132,6 +132,6 @@ dmypy.json
 .vscode/*
 
 # resource, intermediate and result directories
-# intermediate/*
-# resource/*
-# result/*
+intermediate/*
+resource/*
+result/*
