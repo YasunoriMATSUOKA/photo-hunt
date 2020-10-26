@@ -28,7 +28,7 @@ git clone https://github.com/YasunoriMATSUOKA/saizeriya-photo-hunt.git
 cd saizeriya-photo-hunt
 ```
 
-### モジュールのインストール
+### パッケージのインストール
 
 OpenCV
 
