@@ -10,8 +10,8 @@ from denoise_bw_image_file import denoise_bw_image_file
 from dilate_bw_image_file import dilate_bw_image_file
 from create_result_image_file import create_result_image_file
 
-saizeriya_photo_base_url = "https://www.saizeriya.co.jp/entertainment/images"
-saizeriya_photo_base_file_name = "body.png"
+photo_base_url = "https://www.saizeriya.co.jp/entertainment/images"
+photo_base_file_name = "body.png"
 
 resource_dir = "resource"
 intermediate_dir = "intermediate"
@@ -136,16 +136,16 @@ class PhotoHunt:
 
     def convert_url_to_file_path(self, target_dir, file_name):
         path = self.url.replace(
-            saizeriya_photo_base_url,
+            photo_base_url,
             target_dir
         ).replace(
-            saizeriya_photo_base_file_name,
+            photo_base_file_name,
             file_name
         )
         return path
 
     def execute(self):
-        # 間違い探しのオリジナル画像をサイゼリヤのWebサイトからダウンロード
+        # 間違い探しのオリジナル画像をダウンロード
         download_file(
             self.url,
             self.resource_original_image_file_path

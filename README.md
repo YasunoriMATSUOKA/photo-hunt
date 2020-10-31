@@ -1,6 +1,6 @@
-# saizeriya-photo-hunt
+# photo-hunt
 
-サイゼリヤの間違い探しを AI ? の力で解くプログラムです。
+間違い探しを AI ? の力で解くプログラムです。
 
 ## 環境構築
 
@@ -13,19 +13,19 @@
 公開鍵認証の方
 
 ```sh
-git@github.com:YasunoriMATSUOKA/saizeriya-photo-hunt.git
+git@github.com:YasunoriMATSUOKA/photo-hunt.git
 ```
 
 公開鍵認証ではない方
 
 ```sh
-git clone https://github.com/YasunoriMATSUOKA/saizeriya-photo-hunt.git
+git clone https://github.com/YasunoriMATSUOKA/photo-hunt.git
 ```
 
 ### クローンしてできたディレクトリに移動
 
 ```sh
-cd saizeriya-photo-hunt
+cd photo-hunt
 ```
 
 ### パッケージのインストール
